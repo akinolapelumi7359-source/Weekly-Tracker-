@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Week Tracker</title>
+<meta name="description" content="Week Tracker: daily plan, focus timer, academics, faith habits and insights.">
+<meta name="theme-color" content="#2B69DC">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tracker">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header><button class="back" id="hBack" data-a="back" aria-label="Back" hidden>‹</button><div class="tt"><h1 id="title"></h1><p class="date" id="date"></p></div><span id="hAct"></span></header>
+  <main id="app"></main>
+  <footer>Saved on this device only. Use Settings → Export backup to keep a copy.</footer>
+</div>
+<button class="fab" data-a="qadd" aria-label="Quick add a block">+</button>
+<nav class="tabs" aria-label="Main"><div>
+  <button data-a="go" data-v="today"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Today</span></button>
+  <button data-a="go" data-v="plan"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><span>Plan</span></button>
+  <button data-a="go" data-v="focus"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><span>Focus</span></button>
+  <button data-a="go" data-v="more"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg><span>More</span></button>
+</div></nav>
+<script src="app.js"></script>
+</body>
+  </html>
+  
